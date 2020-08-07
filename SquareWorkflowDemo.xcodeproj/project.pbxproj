@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A768E2C124DD85960056BADC /* RootWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768E2C024DD85960056BADC /* RootWorkflow.swift */; };
+		A768E2C524DD86310056BADC /* GraphScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768E2C424DD86310056BADC /* GraphScreen.swift */; };
+		A768E2C724DD895E0056BADC /* HelloWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768E2C624DD895E0056BADC /* HelloWorkflow.swift */; };
+		A768E2CB24DD8A370056BADC /* HelloScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768E2CA24DD8A370056BADC /* HelloScreen.swift */; };
 		A785968824DD83DC00377FEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785968724DD83DC00377FEB /* AppDelegate.swift */; };
 		A785968A24DD83DC00377FEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785968924DD83DC00377FEB /* SceneDelegate.swift */; };
 		A785968C24DD83DC00377FEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785968B24DD83DC00377FEB /* ViewController.swift */; };
@@ -19,6 +23,10 @@
 /* Begin PBXFileReference section */
 		0431A51582DE47BD25BB7158 /* Pods-SquareWorkflowDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareWorkflowDemo.release.xcconfig"; path = "Target Support Files/Pods-SquareWorkflowDemo/Pods-SquareWorkflowDemo.release.xcconfig"; sourceTree = "<group>"; };
 		0FB6256A6D661ED9C8C2D505 /* Pods-SquareWorkflowDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareWorkflowDemo.debug.xcconfig"; path = "Target Support Files/Pods-SquareWorkflowDemo/Pods-SquareWorkflowDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A768E2C024DD85960056BADC /* RootWorkflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWorkflow.swift; sourceTree = "<group>"; };
+		A768E2C424DD86310056BADC /* GraphScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphScreen.swift; sourceTree = "<group>"; };
+		A768E2C624DD895E0056BADC /* HelloWorkflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorkflow.swift; sourceTree = "<group>"; };
+		A768E2CA24DD8A370056BADC /* HelloScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloScreen.swift; sourceTree = "<group>"; };
 		A785968424DD83DC00377FEB /* SquareWorkflowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareWorkflowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A785968724DD83DC00377FEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A785968924DD83DC00377FEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +56,6 @@
 				0FB6256A6D661ED9C8C2D505 /* Pods-SquareWorkflowDemo.debug.xcconfig */,
 				0431A51582DE47BD25BB7158 /* Pods-SquareWorkflowDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +65,24 @@
 				BE891CF42674FF2F1B2E9ECB /* Pods_SquareWorkflowDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A768E2BE24DD857A0056BADC /* Workflows */ = {
+			isa = PBXGroup;
+			children = (
+				A768E2C024DD85960056BADC /* RootWorkflow.swift */,
+				A768E2C624DD895E0056BADC /* HelloWorkflow.swift */,
+			);
+			path = Workflows;
+			sourceTree = "<group>";
+		};
+		A768E2BF24DD85830056BADC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A768E2C424DD86310056BADC /* GraphScreen.swift */,
+				A768E2CA24DD8A370056BADC /* HelloScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		A785967B24DD83DC00377FEB = {
@@ -81,6 +106,8 @@
 		A785968624DD83DC00377FEB /* SquareWorkflowDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A768E2BE24DD857A0056BADC /* Workflows */,
+				A768E2BF24DD85830056BADC /* Screens */,
 				A785968724DD83DC00377FEB /* AppDelegate.swift */,
 				A785968924DD83DC00377FEB /* SceneDelegate.swift */,
 				A785968B24DD83DC00377FEB /* ViewController.swift */,
@@ -207,6 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A768E2C124DD85960056BADC /* RootWorkflow.swift in Sources */,
+				A768E2CB24DD8A370056BADC /* HelloScreen.swift in Sources */,
+				A768E2C724DD895E0056BADC /* HelloWorkflow.swift in Sources */,
+				A768E2C524DD86310056BADC /* GraphScreen.swift in Sources */,
 				A785968C24DD83DC00377FEB /* ViewController.swift in Sources */,
 				A785968824DD83DC00377FEB /* AppDelegate.swift in Sources */,
 				A785968A24DD83DC00377FEB /* SceneDelegate.swift in Sources */,
