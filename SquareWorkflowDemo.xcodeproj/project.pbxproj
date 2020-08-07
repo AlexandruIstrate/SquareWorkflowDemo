@@ -13,9 +13,12 @@
 		A785968F24DD83DC00377FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A785968D24DD83DC00377FEB /* Main.storyboard */; };
 		A785969124DD83DE00377FEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A785969024DD83DE00377FEB /* Assets.xcassets */; };
 		A785969424DD83DE00377FEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A785969224DD83DE00377FEB /* LaunchScreen.storyboard */; };
+		CFA7278F170A80E999AA4D6F /* Pods_SquareWorkflowDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE891CF42674FF2F1B2E9ECB /* Pods_SquareWorkflowDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0431A51582DE47BD25BB7158 /* Pods-SquareWorkflowDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareWorkflowDemo.release.xcconfig"; path = "Target Support Files/Pods-SquareWorkflowDemo/Pods-SquareWorkflowDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0FB6256A6D661ED9C8C2D505 /* Pods-SquareWorkflowDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareWorkflowDemo.debug.xcconfig"; path = "Target Support Files/Pods-SquareWorkflowDemo/Pods-SquareWorkflowDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A785968424DD83DC00377FEB /* SquareWorkflowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareWorkflowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A785968724DD83DC00377FEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A785968924DD83DC00377FEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A785969024DD83DE00377FEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A785969324DD83DE00377FEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A785969524DD83DE00377FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE891CF42674FF2F1B2E9ECB /* Pods_SquareWorkflowDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareWorkflowDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA7278F170A80E999AA4D6F /* Pods_SquareWorkflowDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		218BD5B9C9103698F491D4C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FB6256A6D661ED9C8C2D505 /* Pods-SquareWorkflowDemo.debug.xcconfig */,
+				0431A51582DE47BD25BB7158 /* Pods-SquareWorkflowDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		250ED03389C5B0B5E88BD4F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE891CF42674FF2F1B2E9ECB /* Pods_SquareWorkflowDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A785967B24DD83DC00377FEB = {
 			isa = PBXGroup;
 			children = (
 				A785968624DD83DC00377FEB /* SquareWorkflowDemo */,
 				A785968524DD83DC00377FEB /* Products */,
+				218BD5B9C9103698F491D4C2 /* Pods */,
+				250ED03389C5B0B5E88BD4F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A785969824DD83DE00377FEB /* Build configuration list for PBXNativeTarget "SquareWorkflowDemo" */;
 			buildPhases = (
+				1CE1A83DAF425B9BB6DC27D3 /* [CP] Check Pods Manifest.lock */,
 				A785968024DD83DC00377FEB /* Sources */,
 				A785968124DD83DC00377FEB /* Frameworks */,
 				A785968224DD83DC00377FEB /* Resources */,
+				66A9271D64E07814704BC531 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CE1A83DAF425B9BB6DC27D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SquareWorkflowDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66A9271D64E07814704BC531 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SquareWorkflowDemo/Pods-SquareWorkflowDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SquareWorkflowDemo/Pods-SquareWorkflowDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SquareWorkflowDemo/Pods-SquareWorkflowDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A785968024DD83DC00377FEB /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		A785969924DD83DE00377FEB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FB6256A6D661ED9C8C2D505 /* Pods-SquareWorkflowDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		A785969A24DD83DE00377FEB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0431A51582DE47BD25BB7158 /* Pods-SquareWorkflowDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

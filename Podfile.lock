@@ -1,0 +1,25 @@
+PODS:
+  - ReactiveSwift (6.0.0)
+  - Workflow (0.28.1):
+    - ReactiveSwift (~> 6.0.0)
+  - WorkflowUI (0.28.1):
+    - Workflow (= 0.28.1)
+
+DEPENDENCIES:
+  - Workflow
+  - WorkflowUI
+
+SPEC REPOS:
+  trunk:
+    - ReactiveSwift
+    - Workflow
+    - WorkflowUI
+
+SPEC CHECKSUMS:
+  ReactiveSwift: 24b7ed245617bbfd30ee0c87779b6c64ac1b4518
+  Workflow: f1462201a930862bac3bf59bde933db6908d1b16
+  WorkflowUI: 13fd5f0508b9f72ddfcf3efc31ba97bbf58b169a
+
+PODFILE CHECKSUM: dc43bf0dca5e42b18c2c45e568e84e69022b254b
+
+COCOAPODS: 1.9.1
