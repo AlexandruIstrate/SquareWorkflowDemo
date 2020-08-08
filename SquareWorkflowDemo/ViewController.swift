@@ -40,10 +40,12 @@ class ViewController: UIViewController {
         let container = ContainerViewController(
             workflow: RootWorkflow()
         )
-                
+
+        addChild(container)
         let containerView = container.view!
         self.view.addSubview(containerView)
         containerView.translatesAutoresizingMaskIntoConstraints = false
+        container.didMove(toParent: self)
 
         NSLayoutConstraint.activate([
             containerView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
